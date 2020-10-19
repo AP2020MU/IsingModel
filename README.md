@@ -4,17 +4,17 @@
 
 ###IsingModel.pyを実行する際の注意点###
 
-・ソースコードをそのまま実行すると，おそらくIMPORTERRORが発生する．これは"japanize_matplotlib"がインストールされていないことによると思われる．
+・ソースコードをそのまま実行すると，IMPORTERRORが発生する場合がある．これは"japanize_matplotlib"がインストールされていないことによる場合が多い．
 
 -->もし，実行環境において既にmatplotlibのグラフの中に日本語フォントを表示することができるなら，"import japanize_matplotlib"をコメントアウトするだけで実行可能になるはずである．
 
 -->それ以外の場合，
 
-    1. "$ pip install japanize_matplotlib"を実行して環境に"japanize_matplotlib"をインストールする
+    1. ターミナルで"$ pip install japanize_matplotlib"を実行したり，Anacondaでjapanize_matplotlibをapplyしたりするなどして環境に"japanize_matplotlib"をインストールする
     
     2. 他の方法でmatplotlibのグラフの中に日本語フォントを表示できるようにする
     
-    3. IsingModel.pyのクラスメソッドのうち"visualize_*()"の中のtitleやlabelから日本語を消し，アルファベットのみにする
+    3. Ising_class.pyのクラスメソッドのうち"visualize_*()"の中のtitleやlabelから日本語を消し，アルファベットのみにする
     
 のいずれかを行う必要がある．
     
